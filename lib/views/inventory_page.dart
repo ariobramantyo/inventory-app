@@ -77,6 +77,8 @@ class _InventoryPageState extends State<InventoryPage> {
             const SizedBox(height: 10),
             TextFormField(
               controller: deskripsiController,
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
               decoration: const InputDecoration(
                 hintText: 'Masukkan deskripsi barang mu',
                 label: Text('Deskripsi barang'),
