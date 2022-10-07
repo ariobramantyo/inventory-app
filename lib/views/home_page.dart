@@ -48,8 +48,11 @@ class HomePage extends StatelessWidget {
                         },
                       ));
                     },
-                    title: Text(inventories[index].name),
-                    subtitle: Text(inventories[index].description),
+                    title: Text(inventories[index].name, maxLines: 1),
+                    subtitle: Text(
+                      inventories[index].description,
+                      maxLines: 2,
+                    ),
                     trailing: IconButton(
                         onPressed: () {
                           FirestoreService.deleteInvetory(id);
